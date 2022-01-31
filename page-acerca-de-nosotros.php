@@ -5,13 +5,10 @@
 
     <div class="blog-post">
         <h2 class="blog-post-title"> <?php the_title(); ?> </h2>
-        <p class="blog-post-meta">
-            <?php the_date(); ?> por <?php the_author(); ?>
-        </p>
 
-        <?= the_excerpt(); ?>
+        <?= the_content(); ?>
 
-        <a href="<?= the_permalink(); ?>">Ver mas...</a>
+        <p>este es el arcerca de nosotros</p>
     </div>
 <?php } ?>
 
@@ -22,5 +19,4 @@
 </div>
 </div>
 </main>
-
 <?php get_footer(); ?>
